@@ -1,0 +1,50 @@
+var checkDOMReady = setInterval(function() {
+    var radio1 = document.getElementById("radio-1");
+    var image1 = document.getElementById("image-1");
+    var radio2 = document.getElementById("radio-2");
+    var image2 = document.getElementById("image-2");
+    var radio3 = document.getElementById("radio-3");
+    var image3 = document.getElementById("image-3");
+    var radio4 = document.getElementById("radio-4");
+    var image4 = document.getElementById("image-4");
+    var radio5 = document.getElementById("radio-5");
+    var image5 = document.getElementById("image-5");
+    var radio6 = document.getElementById("radio-6");
+    var image6 = document.getElementById("image-6");
+    if (radio1.checked) {
+        image1.style.display = "flex";
+    }else if (radio2.checked){
+        image2.style.display = "flex";
+        image1.style.display = "none";
+    }else if (radio3.checked){
+        image3.style.display = "flex";
+        image1.style.display = "none";
+        image2.style.display = "none";
+    }else if (radio4.checked){
+        image4.style.display = "flex";
+        image1.style.display = "none";
+        image2.style.display = "none";
+        image3.style.display = "none";
+    }else if (radio5.checked){
+        image5.style.display = "flex";
+        image1.style.display = "none";
+        image2.style.display = "none";
+        image3.style.display = "none";
+        image4.style.display = "none";
+    }else if (radio6.checked){
+        image6.style.display = "flex";
+        image1.style.display = "none";
+        image2.style.display = "none";
+        image3.style.display = "none";
+        image4.style.display = "none";
+        image5.style.display = "none";
+    }
+    setTimeout(function() {
+        image1.style.display = "flex";
+        image2.style.display = "flex";
+        image3.style.display = "flex";
+        image4.style.display = "flex";
+        image5.style.display = "flex";
+        image6.style.display = "flex";
+      }, 4000);
+  }, 100);
